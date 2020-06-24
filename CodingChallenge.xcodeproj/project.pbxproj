@@ -15,7 +15,23 @@
 		94C8ED3D21802B8F0025FDF1 /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C8ED3C21802B8F0025FDF1 /* GitHubRequest.swift */; };
 		94CFC46E217EDCEE00AAB71A /* GitHubRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CFC46D217EDCEE00AAB71A /* GitHubRepo.swift */; };
 		94CFC471217EFED300AAB71A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CFC470217EFED300AAB71A /* APIRequest.swift */; };
+		DADD8D0724A33C04002A6F8F /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD8D0524A33BD4002A6F8F /* RxRelay.framework */; };
+		DADD8D0824A33C04002A6F8F /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DADD8D0524A33BD4002A6F8F /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DADD8D0924A33C04002A6F8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DADD8D0824A33C04002A6F8F /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		943185C621792B2300E827AE /* CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +48,7 @@
 		94C8ED3C21802B8F0025FDF1 /* GitHubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
 		94CFC46D217EDCEE00AAB71A /* GitHubRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepo.swift; sourceTree = "<group>"; };
 		94CFC470217EFED300AAB71A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		DADD8D0524A33BD4002A6F8F /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADD8D0724A33C04002A6F8F /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +98,7 @@
 		943185DB2179336A00E827AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DADD8D0524A33BD4002A6F8F /* RxRelay.framework */,
 				94AC7405217E54E30084CFC8 /* RxTest.framework */,
 				94AC73FF217E53930084CFC8 /* RxBlocking.framework */,
 				94AC73FE217E53920084CFC8 /* RxCocoa.framework */,
@@ -124,6 +143,7 @@
 				943185C321792B2200E827AE /* Frameworks */,
 				943185C421792B2200E827AE /* Resources */,
 				94AC7407217E74B00084CFC8 /* ShellScript */,
+				DADD8D0924A33C04002A6F8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X3M3P7J4X7;
+				DEVELOPMENT_TEAM = E4GY5V492N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -376,7 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X3M3P7J4X7;
+				DEVELOPMENT_TEAM = E4GY5V492N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
