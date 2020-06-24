@@ -45,26 +45,7 @@ final class APIClient {
     private let baseURL = URL(string: "https://api.github.com/")!
     
     // TODO: Candidates to implement this method body for the response from the API.
-    func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
-        let observerValue = Observable<T>.create { (observer) in
-            let request = apiRequest.request(with: self.baseURL)
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                do {
-                    let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
-                    observer.onNext(model)
-                } catch let error {
-                    observer.onError(error)
-                }
-                observer.onCompleted()
-            }
-            task.resume()
-            
-            // clean up
-            return Disposables.create {
-                task.cancel()
-            }
-        }
-        return observerValue
-    }
+    /* func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
+    } */
 }
 
